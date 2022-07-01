@@ -1,0 +1,462 @@
+:root{
+    /* font family start */
+    --R: 'Roboto', sans-serif;
+    --RC: 'Roboto Condensed', sans-serif;
+    --RS: 'Roboto Slab', serif;
+    /* font family end */
+
+    /* color start */
+    --black:#000;
+    --white:#fff;
+    --mainColor:#4e4e4e;
+    --navHoverColor:#1abb9c;
+    --bannerFirstHeaderColor:#f3f3f3;
+    --BannerSecondHeaderColor:#a8a8a8;
+    --BannerButtonBG:#3f8dbf;
+    --PellentesqueBG:#9d9abf;
+    --ConsecteturBG:#d2514b;
+    --TristiquetBG:#66a3c6;
+    --FermentumBG:#e8c04f;
+    --paraColor:#616161;
+    --cardSeconHeaderColor:#a8a8a8;
+    --cardParaColor:#5c5c5c;
+    --TestimonialColor:#dcdcdc;
+    --Testimonialpara:#a1a1a1;
+    --footerHeaderColor:#6c6c6c;
+    --footerParaColor:#cacaca;
+    --footergrayLine:#373737;
+    --headerSectionBG:#e5e5e5;
+    --cardSectionBG:#f7f7f7;
+    --WorkSectionBG:#f7f7f7;
+    --TestimonialSectionBG:#efefef;
+    --footerSectionBG:#1d1d1d;
+    /* color end */
+
+    /* few font size start */
+    --LogofontSize:40px;
+    --navitemSize:16px;
+    /* few font size end*/
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--R);
+}
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Bline{
+    width: 100%;
+    height: 2px;
+    background-color: var(--black);
+    opacity: 0.11;
+}
+.footerline{
+    width: 100%;
+    height: 2px;
+    background-color: var(--footergrayLine);
+}
+
+.blackline{
+    width: 100%;
+    height: 2px;
+    background-color: var(--footerSectionBG);
+}
+
+
+/* header section start */
+.headerSection{
+    background-color: var(--headerSectionBG);
+}
+
+.headerSection .navbar{
+    min-height: 125px;
+}
+.headerSection .navbar .navbar-brand{
+    font-size: var(--LogofontSize);
+    font-family: var(--RC);
+    font-weight: 700;
+    color: var(--mainColor);
+}
+/* nav button start */
+.headerSection .navbar button{}
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+  }
+  .line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+/* nav button end */
+.navbar-light .navbar-toggler-icon{}
+.headerSection .navbar .collapse{}
+.headerSection .navbar .collapse .navbar-nav{}
+.headerSection .navbar .collapse .navbar-nav .nav-item{}
+.headerSection .navbar .collapse .navbar-nav .nav-item .nav-link{
+    font-size: var(--navitemSize);
+    font-weight: 700;
+    color: var(--mainColor);
+    transition: all linear 0.4s;
+    padding: 10px 10px;
+}
+.headerSection .navbar .collapse .navbar-nav .nav-item .nav-link:hover{
+    color: var(--navHoverColor);
+    transition: all linear 0.4s;
+}
+.headerSection .navbar .collapse .navbar-nav .nav-item .nav-link.active{
+    color: var(--navHoverColor);
+}
+
+/* header section end */
+
+
+/* hero section start */
+.heroSection{
+    background: #fff url(../img/bannerBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.heroSection .heroBox{
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+.heroSection .heroBox h1{
+    font-size: 40px;
+    font-family: var(--RS);
+    font-weight: 700 !important;
+    color: var(--bannerFirstHeaderColor);
+}
+.heroSection .heroBox .textContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heroSection .heroBox .textContent h3{
+    margin: 40px 0;
+    font-size: 32px;
+    font-family: var(--RS);
+    font-weight: 700;
+    color: var(--BannerSecondHeaderColor);
+}
+.heroSection .heroBox .textContent .button{}
+.heroSection .heroBox .textContent .button button[type="button"]{
+    width: 140px;
+    height: 45px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: var(--RC);
+    font-weight: 700;
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    background-color: var(--BannerButtonBG);
+    box-shadow: inset 0px -5px 0 0 #00000047;
+    transition: all linear 0.4s;
+}
+
+.heroSection .heroBox .textContent .button button[type="button"]:hover{
+    box-shadow: inset 0px -1px 0 0 #00000047;
+    background-color: var(--navHoverColor);
+    transition: all linear 0.4s;
+}
+
+/* hero section end */
+
+/* card section start */
+.cardSection{
+}
+.cardSection .cardBox{
+    min-height: 335px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cardSection .row{}
+.cardSection .row .cardBox{}
+.cardSection .row .cardBox:hover{}
+.cardSection .row .cardBox .cardIcon{
+    display: flex;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.Pellentesque{
+    background-color: var(--PellentesqueBG);
+}
+.Consectetur{
+    background-color: var(--ConsecteturBG);
+}
+.Tristiquet{
+    background-color: var(--TristiquetBG);
+}
+.Fermentum{
+    background-color: var(--FermentumBG);
+}
+.cardSection .row .cardBox .cardIcon img{}
+.cardSection .row .cardBox h3{
+    font-size: 18px;
+    font-family: var(--RS);
+    font-weight: 700;
+    color: var(--mainColor);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.cardSection .row .cardBox p{
+    text-align: center;
+    font-size: 14px;
+    max-width: 230px;
+    color: var(--cardParaColor);
+    line-height: 1.8em;
+}
+/* card section end */
+
+
+/* work section start */
+
+
+.workSection{
+    min-height: 500px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.workSection .workSectionHeader{}
+.workSection .workSectionHeader h2{
+    font-family: var(--RC);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--mainColor);
+    margin-bottom: 20px;
+}
+.workSection .myProjecet{width: 100%;}
+.workSection .myProjecet .images{}
+.workSection .myProjecet .images img{
+    width: 100%;
+}
+.workSection .myProjecet h3{
+    font-size: 18px;
+    font-family: var(--RS);
+    font-weight: 700;
+    color: var(--mainColor);
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.workSection .myProjecet h4{
+    font-size: 13px;
+    font-family: var(--RS);
+    font-weight: 400;
+    color: var(--cardSeconHeaderColor);
+    margin-bottom: 25px;
+}
+.workSection .myProjecet p{
+    font-size: 14px;
+    width: 100%;
+    color: var(--cardParaColor);
+}
+
+
+/* image viewer start */
+
+.img{
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+.img:hover {
+    transition: 0.3s;
+    opacity: 0.7;
+  }
+
+#image-viewer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .modal-content { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  #image-viewer .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  #image-viewer .close:hover,
+  #image-viewer .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+  }
+
+
+/* image viewer end */
+/* work section end */
+
+/* testimonial Seciton start */
+.testimonialSection{background-color: var(--TestimonialSectionBG);}
+.testimonialSection .testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.testimonialSection .testimonial h5{
+    font-size: 100px;
+    margin: -20px 0 -20px 0;
+    width: 100px;
+    height: 100px;
+    color: var(--TestimonialColor);
+    font-family: fangsong;
+    font-weight: 700;
+}
+.testimonialSection .testimonial p{
+    font-size: 20px;
+    font-family: var(--RS);
+    font-weight: 400;
+    max-width: 735px;
+    margin: 0;
+    color: var(--Testimonialpara);
+}
+
+.carousel-control-next-icon , .carousel-control-prev-icon{
+    background: none;
+}
+.carousel-indicators [data-bs-target]{
+    background: none;
+}
+/* testimonial Seciton end */
+
+/* footer section start */
+
+.footerSection{
+    background-color: var(--footerSectionBG);
+    padding: 50px 0;
+}
+.footerSection .footerBox{}
+.footerSection .footerBox ul.footerCol{}
+.footerSection .footerBox ul.footerCol li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: var(--R);
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 35px;
+    color: var(--footerParaColor);
+}
+.footerSection .footerBox ul.footerCol li.footerliHeader{
+    font-size: 18px;
+    font-family: var(--RC);
+    font-weight: 700;
+    color: var(--footerHeaderColor);
+}
+.footerSection .footerBox ul.footerCol li span{}
+.footerSection .footerBox ul.footerCol li i{
+    margin-right: 10px;
+}
+
+.footerSection .footerBox .footerCol li ul.address{}
+.footerSection .footerBox .footerCol li ul.address li{
+    margin-bottom: 8px;
+}
+
+/* footer section end */
+
+
+/* copyright section start */
+.copyRightSection{
+    background-color: var(--footerSectionBG);
+    padding: 50px 0;
+}
+.copyRightSection p{
+    color: var(--footerParaColor);
+    font-size: 14px;
+    font-weight: 400;
+}
+/* copyright section end */
